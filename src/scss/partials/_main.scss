@@ -1,0 +1,118 @@
+//----------------------------------
+// SECTION PROFILE
+//----------------------------------
+.section__profile {
+  grid-column: 1 / span 2;
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+
+  .profile-background__container {
+    position: relative;
+    height: 550px;
+
+    &:hover {
+      .footnote {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+
+    img {
+      max-height: 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+//----------------------------------
+// SECTION ABOUT
+//----------------------------------
+.section__about {
+  grid-column: 3 / span 2;
+
+  h1 {
+    margin-top: -2px;
+    margin-bottom: 5px;
+    line-height: 1;
+  }
+}
+
+.social-links {
+  li {
+    display: inline-block;
+    padding-right: 15px;
+
+    a {
+      color: #999;
+      font-size: 1.4em;
+
+      &:hover {
+        .fa-linkedin, .fa-github, .fa-envelope { color: $social-hover; }
+      }
+    }
+  }
+}
+
+//----------------------------------
+// SECTION SKILLS
+//----------------------------------
+.section__skills {
+  grid-column: 1 / span 4;
+}
+.skills-block {
+  ul {
+    margin-top: 20px;
+  }
+}
+
+.skillbar {
+	position: relative;
+	display: block;
+	margin: 5px 0 30px;
+	width: 100%;
+	background: #eee;
+	height: 5px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	transition: 0.4s linear;
+	transition-property: width, background-color;
+}
+
+.skillbar__bar {
+	height: 5px;
+	width: 0px;
+
+	border-radius: 3px;
+
+  &.skillbar__html { background: #e67e22; }
+  &.skillbar__css { background: violet; }
+}
+
+
+
+
+.skillbar__content {
+  span {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: $fw-bold;
+    text-transform: uppercase;
+
+    &:first-child {
+      float: left;
+    }
+
+    &:last-child {
+      float: right;
+    }
+  }
+}
+
+
+//----------------------------------
+// SECTION PORTFOLIO
+//----------------------------------
+.section__portfolio {
+  grid-column: 1 / span 4;
+}

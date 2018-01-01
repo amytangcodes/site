@@ -1,0 +1,38 @@
+.header-nav__navlink {
+  text-align: center;
+
+  a {
+    text-transform: uppercase;
+    font-weight: $fw-semibold;
+    color: $base;
+    display: block;
+    margin: 0;
+    padding: 50px 18px 5px 18px;
+    background: none;
+
+    &:hover {
+      background: $black;
+      color: white;
+    }
+  }
+
+}
+
+.logo {
+  margin: -58px 0 0 -100px;
+  @include position(absolute, 50% 0 0 50%);
+
+  img {
+  }
+}
+
+.hidden-xs-down {
+  @media (max-width: 575px) {
+    display: none !important;
+  }
+}
+.hidden-sm-up {
+  @media (min-width: 575px) {
+    display: none !important;
+  }
+}

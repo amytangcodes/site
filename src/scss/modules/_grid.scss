@@ -1,0 +1,12 @@
+.grid-container { display: grid; }
+
+.grid-container__main {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100vh auto 100vh;
+  grid-gap: 10px;
+
+  section {
+    border: 1px dashed violet;
+    padding: 45px 0;
+  }
+}

@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: $opensans;
+  color: $darkcyangray;
+  transition: all .4s .3s ease-in;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $lato;
+  line-height: 1.125em;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5em !important;
+  font-weight: 200;
+  margin: 0 auto;
+  padding-bottom: 4px;
+}
+
+a, i {
+  transition: all 0.5s ease;
+
+  &:hover, &:active, &:focus {
+    text-decoration: none;
+  }
+}
+
+p {
+  font-family: "Lato", serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.4em;
+}
+
+ol, ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header, main {
+  // min-height: 100vh;
+}
+
+
+// REMOVE WHEN DONE *trash
+
+// header { background: yellow; }
+.section-portfolio { background: pink; }
+// footer { background: violet; }

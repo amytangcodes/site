@@ -1,0 +1,41 @@
+// FONTS
+$lato: 'Lato', sans-serif;
+$opensans: 'Open Sans', sans-serif;
+
+// Font Weights
+$fw-thin: 100;
+$fw-extralight: 200;
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semibold: 600;
+$fw-bold: 700;
+$fw-extrabold: 800;
+$fw-black: 900;
+
+// COLORS
+$base: #5a5a5a;
+$secondary: #D0D3D8;
+$tertiary: #B8C0CD;
+$black: #222;
+
+$moderatecyan: #67949D;
+$darkcyan: #48798C;
+$darkcyangray: #47514D;
+$brown: #957856;
+$orange: #FF5B04;
+
+$social-hover: $moderatecyan;
+
+// MEDIA QUERIES
+
+$screen-xs-min: 374px;
+$screen-xs-max: 480px;
+$screen-sm-min: 414px;
+$screen-sm-max: 736px;
+$screen-md-min: 768px;
+$screen-md-max: 900px;
+$screen-tablet-min: 1024px;
+$screen-tablet-max: 1366px;
+$screen-lg-min: 1200px;
+$screen-lg-max: 1600px;

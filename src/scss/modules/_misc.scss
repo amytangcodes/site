@@ -1,0 +1,51 @@
+::selection{
+  background: #333;
+  color: #fff;
+  text-shadow: none;
+}
+::-moz-selection{
+  background: #333;
+  color: #fff;
+  text-shadow: none;
+}
+::-webkit-selection{
+  background: #333;
+  color: #fff;
+  text-shadow: none;
+}
+
+
+.footnote {
+  visibility: hidden;
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  padding: 5px;
+
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  transition: all 0.8s ease;
+
+  /* Fade in tooltip */
+  opacity: 0;
+
+  &:hover {
+    color: darken($secondary, 10%);
+    margin-right: 25px;
+  }
+
+  .footnote-content {
+    color: $darkcyan;
+    font-size: 12px;
+    transform: rotate(90deg);
+    transform-origin: left top 0;
+    margin-left: 15px;
+    display: block;
+    padding-bottom: 5px;
+    border-bottom: 1px solid $social-hover;
+  }
+}
