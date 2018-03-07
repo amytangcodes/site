@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Font-Name';
+  font-family: 'HK Grotesk';
   src: url('../fonts/font-name.eot');
   src: url('../fonts/font-name.eot?#iefix') format('embedded-opentype'),
        url('../fonts/font-name.woff') format('woff'),
@@ -7,6 +7,24 @@
        url('../fonts/font-name.svg#font-name') format('svg');
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'HKGrotesk';
+  src: url("../components/hk-grotesk/HKGrotesk-Light.otf") format("opentype");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'HKGrotesk';
+  src: url("../components/hk-grotesk/HKGrotesk-Regular.otf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'HKGrotesk';
+  src: url("../components/hk-grotesk/HKGrotesk-Bold.otf") format("opentype");
+  font-weight: bold;
 }
 
 
