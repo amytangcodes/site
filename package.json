@@ -1,7 +1,7 @@
 {
   "name": "fastshell",
-  "title": "Fiercely quick and opinionated front-ends",
-  "author": "Hossein Karami",
+  "title": "Personal page for front-end developer Amy Tang!",
+  "author": "Amy Tang",
   "url": "https://HosseinKarami.github.io/fastshell",
   "version": "1.0.5",
   "license": "MIT",
@@ -20,5 +20,9 @@
     "gulp-sass": "^2.1.1",
     "gulp-uglify": "^1.5.1",
     "jshint": "^2.8.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "node-sass": "^4.7.2"
   }
 }
