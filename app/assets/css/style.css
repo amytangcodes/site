@@ -6910,19 +6910,31 @@ th {
   display: -ms-grid;
   display: grid; }
 
-.grid-container__main {
+.flex-container {
+  display: -ms-flexbox;
+  display: flex; }
+
+.flex-container__main {
+  height: 90vh;
+  -ms-flex-direction: row;
+      flex-direction: row; }
+  .flex-container__main section {
+    width: 50%;
+    padding: 20px; }
+
+.grid-container__experience {
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
   -ms-grid-rows: auto auto auto;
       grid-template-rows: auto auto auto;
   grid-gap: 10px; }
   @media (min-width: 1280px) {
-    .grid-container__main {
-      -ms-grid-rows: 100vh auto 100vh;
-          grid-template-rows: 100vh auto 100vh; } }
-  .grid-container__main section {
+    .grid-container__experience {
+      -ms-grid-rows: 100vh;
+          grid-template-rows: 100vh; } }
+  .grid-container__experience section {
     border: 1px dashed violet;
-    padding: 100px 0 50px; }
+    padding: 50px 0 50px; }
 
 .header-nav__navlink {
   text-align: center; }
@@ -6958,34 +6970,28 @@ th {
 .nav ul {
   list-style: none; }
 
-.section__profile {
-  -ms-grid-column-span: 2;
-  -ms-grid-column: 1;
-      grid-column: 1 / span 2;
-  background-size: contain;
-  background-position: top;
-  background-repeat: no-repeat; }
-  @media (max-width: 667px) {
-    .section__profile {
-      display: none; } }
-  .section__profile .profile-background__container {
-    position: relative;
-    height: 550px; }
-    .section__profile .profile-background__container:hover .footnote {
-      visibility: visible;
-      opacity: 1; }
-    .section__profile .profile-background__container img {
-      max-height: 100%;
-      max-width: 100%; }
+@media (max-width: 667px) {
+  .section__profile {
+    display: none; } }
 
-.section__about {
-  -ms-grid-column-span: 2;
-  -ms-grid-column: 3;
-      grid-column: 3 / span 2; }
-  .section__about h1 {
-    margin-top: -2px;
-    margin-bottom: 5px;
-    line-height: 1; }
+.section__profile .profile-background__container {
+  background: url("../img/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100%;
+  opacity: 0.8; }
+  .section__profile .profile-background__container:hover .footnote {
+    visibility: visible;
+    opacity: 1; }
+  .section__profile .profile-background__container img {
+    max-height: 100%;
+    max-width: 100%; }
+
+.section__about h1 {
+  margin-top: -2px;
+  margin-bottom: 5px;
+  line-height: 1; }
 
 .social-links li {
   display: inline-block;
