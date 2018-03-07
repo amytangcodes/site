@@ -1,8 +1,8 @@
 /*!
  * fastshell
- * Fiercely quick and opinionated front-ends
+ * Personal page for front-end developer Amy Tang!
  * https://HosseinKarami.github.io/fastshell
- * @author Hossein Karami
+ * @author Amy Tang
  * @version 1.0.5
  * Copyright 2018. MIT licensed.
  */

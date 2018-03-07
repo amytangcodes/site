@@ -7,6 +7,10 @@
   background-position: top;
   background-repeat: no-repeat;
 
+  @media (max-width: 667px) {
+    display: none;
+  }
+
   .profile-background__container {
     position: relative;
     height: 550px;
@@ -60,6 +64,7 @@
 .section__skills {
   grid-column: 1 / span 4;
 }
+
 .skills-block {
   ul {
     margin-top: 20px;
@@ -82,15 +87,15 @@
 .skillbar__bar {
 	height: 5px;
 	width: 0px;
-
 	border-radius: 3px;
 
   &.skillbar__html { background: #e67e22; }
-  &.skillbar__css { background: violet; }
+  &.skillbar__js { background: #f1c40f; }
+  &.skillbar__node { background: #2980b9; }
+  &.skillbar__ror { background: #c0392b; }
+  &.skillbar__tools { background: #2ecc71; }
+  &.skillbar__react { background: #34495e; }
 }
-
-
-
 
 .skillbar__content {
   span {
@@ -108,7 +113,6 @@
     }
   }
 }
-
 
 //----------------------------------
 // SECTION PORTFOLIO

@@ -2,11 +2,15 @@
 
 .grid-container__main {
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 100vh auto 100vh;
+  grid-template-rows: auto auto auto;
   grid-gap: 10px;
+
+  @media (min-width: 1280px) {
+    grid-template-rows: 100vh auto 100vh;
+  }
 
   section {
     border: 1px dashed violet;
-    padding: 45px 0;
+    padding: 100px 0 50px;
   }
 }
