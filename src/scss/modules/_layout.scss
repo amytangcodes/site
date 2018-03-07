@@ -7,8 +7,12 @@
 
   section {
     width: 50%;
-    padding: 20px;
+    padding: 50px 20px;
     // border: 1px dashed violet;
+
+    @media (max-width: 667px) {
+      width: 100%;
+    }
   }
 }
 

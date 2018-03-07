@@ -1,5 +1,10 @@
 .footer {
   padding: 15px 0;
   width: 100%;
-  background: yellow;
+  box-shadow: 0 8px 20px 0 black;
+
+  p {
+    margin: 0;
+    line-height: 2;
+  }
 }

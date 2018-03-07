@@ -5,13 +5,13 @@
 }
 
 body {
-  font-family: $opensans;
+  font-family: $secondary;
   color: $darkcyangray;
   transition: all .4s .3s ease-in;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $lato;
+  font-family: $primary;
   line-height: 1.125em;
   margin: 0;
 }
