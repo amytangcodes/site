@@ -13,7 +13,7 @@
     <!-- BOOTSTRAP CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <!-- FONT -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Open+Sans:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Nunito+Sans:300,400,700" rel="stylesheet">
 
     <link href="//www.google-analytics.com" rel="dns-prefetch">
     <link href="//ajax.googleapis.com" rel="dns-prefetch">
@@ -34,118 +34,66 @@
     </header>
 
     <main class="main" role="main">
-      <div class="container">
+
         <!-- Profile Section -->
-        <div class="flex-container flex-container__main">
-          <section class="section__profile">
-            <div class="profile-background__container">
-              <div class="footnote">
-                <a href="https://www.instagram.com/artsandrec/" class="footnote-content">Photo Credit: Dale Sood</a>
-              </div>
+        <div class="profile-block">
+          <div class="container-fluid">
+            <div class="flex-container flex-container__main">
+              <section class="section__profile">
+                <div class="content-wrapper">
+                  <div class="img-container" data-align="right">
+                    <img src="assets/img/banner.jpg" width="768" height="1024" alt="Amy Tang Profile Image">
+                    <div class="footnote">
+                      <a href="https://www.instagram.com/artsandrec/" class="footnote-content">Photo Credit: Dale Sood</a>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section id="about" class="section__about">
+                <h1><span class="fw-bold">AMY TANG</span> is a front-end developer living and working in Toronto, Canada.</h1>
+                <p>In just over three years I have discovered that I have a passion for creating efficient and organized code. I cringe when I see repeated code, I love pushing for more critical PR's, and I want to keep learning more through challenging work. As a developer at Info-Tech Research Group I work with the design and development team always improving the look and build of digital products.</p>
+              </section>
+              <section class="section__portfolio">
+                <ul class="projectContainer">
+        					<li class="work">
+        						<img src="images/project1.jpg" alt="">
+        						<div class="overlay">
+        							<h3>Cuda</h3>
+        							<p>PSD to HTML/CSS Conversion</p>
+        						</div>
+        					</li>
+        					<li class="work">
+        						<img src="images/project2.jpg" alt="">
+        						<div class="overlay">
+        							<h3>Spin Artist Ageny</h3>
+        							<p>Update talent booking agency website</p>
+        						</div>
+        					</li>
+        					<li class="work">
+        						<img src="images/project3.jpg" alt="">
+        						<div class="overlay">
+        							<h3>Ecommerce Site</h3>
+        							<p>PSD to HTML/CSS Conversion.</p>
+        						</div>
+        					</li>
+        					<li class="work">
+        						<img src="images/project4.jpg" alt="">
+        						<div class="overlay">
+        							<h3>Project 4</h3>
+        							<p></p>
+        						</div>
+        					</li>
+        					<li class="work">
+        						<img src="images/project5.jpg" alt="">
+        						<div class="overlay">
+        							<h3>Project 5</h3>
+        							<p></p>
+        						</div>
+        					</li>
+        				</ul><!-- End of projectContainer -->
+              </section>
             </div>
-          </section>
-          <section id="about" class="section__about">
-            <h1><span class="fw-bold">Amy Tang</span> is a front-end developer living and working in Toronto, Canada.</h1>
-            <p>In just over two years I discovered that I have a passion for creating beautiful and organized code. I enjoy working with HTML5, CSS3/Sass, Responsive Design, and ReactJS. I hunger to learn more about best coding practices and I want to work with people who are equally anal about code standards. As a developer at Info-Tech Research Group I work equally with the design team and the development team, being able to build both design and development skills.</p>
-            <div class="skills-block hidden-md-down">
-              <h3>Tools I've worked with include:</h3>
-              <ul>
-                <li class="skillbar" data-percent="80%">
-                  <div class="skillbar__bar skillbar__html"></div>
-                  <div class="skillbar__content">
-                    <span>HTML5 / CSS3</span>
-                    <span>80%</span>
-                  </div>
-                </li> <!-- End Skill Bar -->
-                <li class="skillbar" data-percent="20%">
-                  <div class="skillbar__bar skillbar__js"></div>
-                  <div class="skillbar__content">
-                    <span>JavaScript</span>
-                    <span>20%</span>
-                  </div>
-                </li> <!-- End Skill Bar -->
-                <li class="skillbar" data-percent="30%">
-                  <div class="skillbar__bar skillbar__node"></div>
-                  <div class="skillbar__content">
-                    <span>Node.js</span>
-                    <span>50%</span>
-                  </div>
-                </li> <!-- End Skill Bar -->
-                <li class="skillbar" data-percent="70%">
-                  <div class="skillbar__bar skillbar__tools"></div>
-                  <div class="skillbar__content">
-                    <span>Terminal | Github | SourceTree</span>
-                    <span>70%</span>
-                  </div>
-                </li> <!-- End Skill Bar -->
-
-                <li class="skillbar" data-percent="20%">
-                  <div class="skillbar__bar skillbar__ror"></div>
-                  <div class="skillbar__content">
-                    <span>Ruby on Rails</span>
-                    <span>20%</span>
-                  </div>
-                </li> <!-- End Skill Bar -->
-                <li class="skillbar" data-percent="20%">
-                  <div class="skillbar__bar skillbar__react"></div>
-                  <div class="skillbar__content">
-                    <span>Handlebars | ReactJS</span>
-                    <span>20%</span>
-                  </div>
-                </li> <!-- End Skill Bar -->
-              </ul>
-            </div>
-          </section>
-        </div>
-
-        <!-- Skills Section -->
-        <div class="skills-block hidden-md-up">
-          <h3>Tools I've worked with include:</h3>
-          <ul>
-            <li class="skillbar" data-percent="80%">
-              <div class="skillbar__bar skillbar__html"></div>
-              <div class="skillbar__content">
-                <span>HTML5 / CSS3</span>
-                <span>80%</span>
-              </div>
-            </li> <!-- End Skill Bar -->
-            <li class="skillbar" data-percent="20%">
-              <div class="skillbar__bar skillbar__js"></div>
-              <div class="skillbar__content">
-                <span>JavaScript</span>
-                <span>20%</span>
-              </div>
-            </li> <!-- End Skill Bar -->
-            <li class="skillbar" data-percent="30%">
-              <div class="skillbar__bar skillbar__node"></div>
-              <div class="skillbar__content">
-                <span>Node.js</span>
-                <span>50%</span>
-              </div>
-            </li> <!-- End Skill Bar -->
-            <li class="skillbar" data-percent="70%">
-              <div class="skillbar__bar skillbar__tools"></div>
-              <div class="skillbar__content">
-                <span>Terminal | Github | SourceTree</span>
-                <span>70%</span>
-              </div>
-            </li> <!-- End Skill Bar -->
-
-            <li class="skillbar" data-percent="20%">
-              <div class="skillbar__bar skillbar__ror"></div>
-              <div class="skillbar__content">
-                <span>Ruby on Rails</span>
-                <span>20%</span>
-              </div>
-            </li> <!-- End Skill Bar -->
-            <li class="skillbar" data-percent="20%">
-              <div class="skillbar__bar skillbar__react"></div>
-              <div class="skillbar__content">
-                <span>Handlebars | ReactJS</span>
-                <span>20%</span>
-              </div>
-            </li> <!-- End Skill Bar -->
-          </ul>
+          </div>
         </div>
 
         <!-- Experience Section -->
