@@ -1,30 +1,66 @@
 //----------------------------------
 // SECTION PROFILE
 //----------------------------------
+.profile-block {
+  h1 {
+    margin-top: 100px;
+    position: absolute;
+    left: 250px;
+    color: black;
+
+    span {
+      font-size: 60px;
+      letter-spacing: 5px;
+    }
+  }
+}
+
 .section__profile {
-  @media (max-width: 667px) {
-    display: none;
+  width: 40%;
+
+  .footnote {
+    background: transparent;
+    width: 100%;
+    padding: 5px;
+    padding-left: 50px;
+    transition: all 0.8s ease;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+
+    .footnote-content {
+      font-family: $secondary;
+      color: $darkcyan;
+      font-size: 12px;
+      margin-right: 15px;
+      display: block;
+      padding-bottom: 5px;
+      border-bottom: 1px solid $darkcyan;
+    }
   }
 
-  .profile-background__container {
-    background: url("../img/banner.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    height: 100%;
-    opacity: 0.8;
+  .img-container {
+    position: absolute;
+    left: -36px;
+    width: 90%;
 
     &:hover {
       .footnote {
+        bottom: -38px;
         visibility: visible;
         opacity: 1;
       }
     }
 
     img {
-      max-height: 100%;
       max-width: 100%;
+      height: auto;
+      opacity: 0.5;
     }
+  }
+
+  .content-wrapper {
+    position: relative;
   }
 }
 
@@ -32,12 +68,10 @@
 // SECTION ABOUT
 //----------------------------------
 .section__about {
+  width: 60%;
 
-
-  h1 {
-    margin-top: -2px;
-    margin-bottom: 5px;
-    line-height: 1;
+  p {
+    margin-top: 250px;
   }
 }
 
@@ -58,64 +92,11 @@
 }
 
 //----------------------------------
-// SECTION SKILLS
-//----------------------------------
-.skills-block {
-  margin-top: 50px;
-
-  ul {
-    margin-top: 20px;
-  }
-}
-
-.skillbar {
-	position: relative;
-	display: block;
-	margin: 5px 0 30px;
-	width: 100%;
-	background: #eee;
-	height: 5px;
-	border-radius: 3px;
-	-moz-border-radius: 3px;
-	transition: 0.4s linear;
-	transition-property: width, background-color;
-}
-
-.skillbar__bar {
-	height: 5px;
-	width: 0px;
-	border-radius: 3px;
-
-  &.skillbar__html { background: #e67e22; }
-  &.skillbar__js { background: #f1c40f; }
-  &.skillbar__node { background: #2980b9; }
-  &.skillbar__ror { background: #c0392b; }
-  &.skillbar__tools { background: #2ecc71; }
-  &.skillbar__react { background: #34495e; }
-}
-
-.skillbar__content {
-  span {
-    display: inline-block;
-    font-size: 10px;
-    font-weight: $fw-bold;
-    text-transform: uppercase;
-
-    &:first-child {
-      float: left;
-    }
-
-    &:last-child {
-      float: right;
-    }
-  }
-}
-
-//----------------------------------
 // SECTION PORTFOLIO
 //----------------------------------
 .section__portfolio {
   grid-column: 1 / span 4;
+  color: black;
 }
 
 .work {
@@ -141,6 +122,7 @@
 		}
 
     h3, p {
+      color: blue;
 			font-family: $primary;
 			padding-left: 20px;
 		}
