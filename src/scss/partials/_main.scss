@@ -1,7 +1,22 @@
 //----------------------------------
 // SECTION PROFILE
 //----------------------------------
+.profile-block {
+  h1 {
+    margin-top: 100px;
+    position: absolute;
+    left: 250px;
+    color: black;
+
+    span {
+      font-size: 60px;
+      letter-spacing: 5px;
+    }
+  }
+}
+
 .section__profile {
+  width: 40%;
 
   .footnote {
     background: transparent;
@@ -26,7 +41,8 @@
 
   .img-container {
     position: absolute;
-    left: -37px;
+    left: -36px;
+    width: 90%;
 
     &:hover {
       .footnote {
@@ -52,12 +68,10 @@
 // SECTION ABOUT
 //----------------------------------
 .section__about {
+  width: 60%;
 
-  h1 {
-    margin-top: 80px;
-    margin-bottom: 5px;
-    margin-left: -150px;
-    line-height: 1;
+  p {
+    margin-top: 250px;
   }
 }
 

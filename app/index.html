@@ -13,7 +13,7 @@
     <!-- BOOTSTRAP CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <!-- FONT -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Nunito+Sans:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700|Playfair+Display:400,700,900" rel="stylesheet">
 
     <link href="//www.google-analytics.com" rel="dns-prefetch">
     <link href="//ajax.googleapis.com" rel="dns-prefetch">
@@ -23,10 +23,10 @@
   <body>
     <header id="header" class="header d-flex justify-content-between">
       <div class="pl-5 header-nav__navlink">
-        <a href="#">Amy Tang</a>
+        <a href="#portfolio">Portfolio</a>
       </div>
       <div class="pr-5 header-nav__navlink hidden-xs-down">
-        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
       </div>
       <div class="pr-5 header-nav__navlink hidden-sm-up">
         <a href="#about">About</a>
@@ -42,7 +42,7 @@
               <section class="section__profile">
                 <div class="content-wrapper">
                   <div class="img-container" data-align="right">
-                    <img src="assets/img/banner.jpg" width="768" height="1024" alt="Amy Tang Profile Image">
+                    <img src="assets/img/banner.jpg" alt="Amy Tang Profile Image">
                     <div class="footnote">
                       <a href="https://www.instagram.com/artsandrec/" class="footnote-content">Photo Credit: Dale Sood</a>
                     </div>
@@ -50,55 +50,16 @@
                 </div>
               </section>
               <section id="about" class="section__about">
-                <h1><span class="fw-bold">AMY TANG</span> is a front-end developer living and working in Toronto, Canada.</h1>
+                <h1><span class="fw-black">AMY TANG</span> is a front-end developer living and working in Toronto, Canada.</h1>
                 <p>In just over three years I have discovered that I have a passion for creating efficient and organized code. I cringe when I see repeated code, I love pushing for more critical PR's, and I want to keep learning more through challenging work. As a developer at Info-Tech Research Group I work with the design and development team always improving the look and build of digital products.</p>
-              </section>
-              <section class="section__portfolio">
-                <ul class="projectContainer">
-        					<li class="work">
-        						<img src="images/project1.jpg" alt="">
-        						<div class="overlay">
-        							<h3>Cuda</h3>
-        							<p>PSD to HTML/CSS Conversion</p>
-        						</div>
-        					</li>
-        					<li class="work">
-        						<img src="images/project2.jpg" alt="">
-        						<div class="overlay">
-        							<h3>Spin Artist Ageny</h3>
-        							<p>Update talent booking agency website</p>
-        						</div>
-        					</li>
-        					<li class="work">
-        						<img src="images/project3.jpg" alt="">
-        						<div class="overlay">
-        							<h3>Ecommerce Site</h3>
-        							<p>PSD to HTML/CSS Conversion.</p>
-        						</div>
-        					</li>
-        					<li class="work">
-        						<img src="images/project4.jpg" alt="">
-        						<div class="overlay">
-        							<h3>Project 4</h3>
-        							<p></p>
-        						</div>
-        					</li>
-        					<li class="work">
-        						<img src="images/project5.jpg" alt="">
-        						<div class="overlay">
-        							<h3>Project 5</h3>
-        							<p></p>
-        						</div>
-        					</li>
-        				</ul><!-- End of projectContainer -->
               </section>
             </div>
           </div>
         </div>
 
         <!-- Experience Section -->
-        <div class="grid-container grid-container__experience">
-          <section id="portfolio" class="section__portfolio">
+        <div id="portfolio">
+          <section class="section__portfolio container">
             <div class="section-header">
               <h2>Portfolio</h2>
             </div>
@@ -106,7 +67,7 @@
               <div class="col-sm-6 col-md-4">
                 <div class="work work-item1">
                   <a href="http://amytangcodes.com/pacific/" target="_blank" class="img-overlay">
-        						<h2>Pacific Tavern</h2>
+        						<h3>Pacific Tavern</h3>
         						<p>Tasked to create interactive and responsive hero and navigation sections from designed templates</p>
         					</a>
                 </div>
@@ -114,7 +75,7 @@
       				<div class="col-sm-6 col-md-4">
                 <div class="work work-item2">
                   <a href="http://amytangcodes.com/elixir/" target="_blank" class="img-overlay">
-        						<h2>Elixir</h2>
+        						<h3>Elixir</h3>
         						<p>Tasked to create interactive and responsive hero and navigation sections from designed templates</p>
         					</a>
                 </div>
@@ -122,7 +83,7 @@
       				<div class="col-sm-6 col-md-4">
                 <div class="work work-item3">
                   <a href="http://amytangcodes.com/jqueryGallery/" target="_blank" class="img-overlay">
-        						<h2>Short Hair, Don't Care</h2>
+        						<h3>Short Hair, Don't Care</h3>
         						<p>Paired programming with Emily Dela Cruz where we created an interactive jQuery gallery</p>
         					</a>
                 </div>
@@ -130,7 +91,7 @@
       				<div class="col-sm-6 col-md-4">
                 <div class="work work-item4">
                   <a href="http://www.amytangcodes.com/rockPaperScissors/" target="_blank" class="img-overlay">
-        						<h2>Rock | Paper | Scissors</h2>
+        						<h3>Rock | Paper | Scissors</h3>
         						<p>Play a game of rock, paper, scissors</p>
         					</a>
                 </div>
@@ -138,7 +99,7 @@
       				<div class="col-sm-6 col-md-4">
                 <div class="work work-item5">
                   <a href="http://www.amytangcodes.com/penguins/" target="_blank" class="img-overlay">
-        						<h2>Penguins!</h2>
+        						<h3>Penguins!</h3>
         						<p>Cute, simple but fun projest with Coder Projects</p>
         					</a>
                 </div>
@@ -146,7 +107,7 @@
       				<div class="col-sm-6 col-md-4">
                 <div class="work work-item6">
                   <a href="http://amytangcodes.com/modal_gallery/" target="_blank" class="img-overlay">
-        						<h2>Modal Gallery</h2>
+        						<h3>Modal Gallery</h3>
         						<p>Creating a responsive modal gallery with some animations</p>
         					</a>
                 </div>
@@ -154,13 +115,18 @@
       				<div class="col-sm-6 col-md-4">
                 <div class="work work-item7">
                   <a href="http://amytangcodes.com/apiProject/" target="_blank" class="img-overlay">
-        						<h2>API Project</h2>
+        						<h3>API Project</h3>
         						<p>API Project calling on Yummly's and FourSquare's API</p>
         					</a>
                 </div>
       				</div>
             </div>
           </section>
+        </div>
+
+        <!-- Contact Section -->
+        <div id="contact" class="contact-block">
+
         </div>
       </div>
     </main>
