@@ -1,42 +1,90 @@
 .grid-container { display: grid; }
 .flex-container { display: flex; }
 
-.flex-container__main {
-  height: 90vh;
-  flex-direction: row;
-
-  section {
-    padding: 50px 20px;
-
-    @media (max-width: 667px) {
-      width: 100%;
+// -------------------------------
+// SECTION
+// -------------------------------
+.section {
+  border: 1px dashed violet;
+  padding: 3.75em 0;
+  @media screen and (min-width: 46.875em) {
+    padding-top: 5.625em;
+    padding-bottom: 5.625em;
+  }
+  .section {
+    &:first-child:not(:only-child) {
+      padding-top: 0;
+    }
+    &:last-child:not(:only-child) {
+      padding-bottom: 0;
     }
   }
 }
 
-.grid-container__experience {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto;
-  grid-gap: 10px;
+.section--tight {
+  // border: 1px dashed violet;
+  padding: 1.875em 0;
 
-  @media (min-width: 1280px) {
-    grid-template-rows: 100vh;
-  }
-
-  section {
-    border: 1px dashed violet;
-    padding: 50px 0 50px;
+  @media screen and (min-width: 46.875em) {
+    padding-top: 2.8125em;
+    padding-bottom: 2.8125em;
   }
 }
 
+.section--p-top-only {
+  padding-bottom: 0;
+}
 
-.section-header {
-  h2 {
-    text-transform: uppercase;
-    margin-bottom: 0.8125em;
+.section--p-bottom-only {
+  padding-top: 0;
+}
 
-    @media screen and (min-width: 67.5em) {
-      margin-bottom: 1.75em;
-    }
+// -------------------------------
+// SPACING
+// -------------------------------
+
+// Gutter Bottom
+// -------------------------------
+.gutter-bottom {
+  margin-bottom: 30px;
+}
+
+.gutter-bottom--half {
+  margin-bottom: 15px;
+}
+
+.gutter-bottom--reset {
+  margin-bottom: 0 !important;
+}
+
+.gutter-bottom--mobile {
+  @media screen and (max-width: 46.8125em) {
+    margin-bottom: 30px;
   }
+}
+
+.gutter-bottom--tablet-down {
+  @media screen and (max-width: 67.4375em) {
+    margin-bottom: 30px;
+  }
+}
+
+.gutter-bottom--reset--mobile {
+  @media screen and (max-width: 46.8125em) {
+    margin-bottom: 0 !important;
+  }
+}
+
+// Gutter Top
+// -------------------------------
+.gutter-top {
+  margin-top: 30px;
+}
+
+.gutter-top--half {
+  margin-top: 15px;
+}
+
+.gutter-top--reset {
+  margin-bottom: 0 !important;
 }

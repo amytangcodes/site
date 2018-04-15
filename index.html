@@ -25,126 +25,109 @@
       <div class="pl-5 header-nav__navlink">
         <a href="#portfolio">Portfolio</a>
       </div>
-      <div class="pr-5 header-nav__navlink">
+      <div class="pr-5 header-nav__navlink hidden-xs-down">
         <a href="#contact">Contact</a>
+      </div>
+      <div class="pr-5 header-nav__navlink hidden-sm-up">
+        <a href="#about">About</a>
       </div>
     </header>
 
     <main class="main" role="main">
 
-      <!-- Profile Section -->
-      <div class="profile-block section--tight">
-        <div class="container-fluid">
-          <div class="row">
-            <section class="col-md-8 profile__about">
-              <h1 class="heading--1">Amy Tang</h1>
-              <p>is a front-end developer living and working in Toronto, Canada. In just over three years I have discovered that I have a passion for creating efficient and organized code. I cringe when I see repeated code, I love pushing for more critical PR's, and I want to keep learning more through challenging work. As a developer at Info-Tech Research Group I work with the design and development team always improving the look and build of digital products.</p>
-            </section>
-            <section class="col-md-4 profile__image">
+        <!-- Profile Section -->
+        <div class="section profile-block">
+          <div class="container-fluid">
+            <div class="flex-container flex-container__main">
+              <section class="section__profile">
                 <div class="content-wrapper">
                   <div class="img-container" data-align="right">
                     <img src="assets/img/banner.jpg" alt="Amy Tang Profile Image">
                     <div class="footnote">
-                      <a href="https://www.instagram.com/artsandrec/" class="footnote-content">Photo | Dale Sood</a>
+                      <a href="https://www.instagram.com/artsandrec/" class="footnote-content">Photo Credit: Dale Sood</a>
                     </div>
                   </div>
                 </div>
               </section>
+              <section class="section__about">
+                <h1 class="heading--1"><span class="fw-black">AMY TANG</span> is a front-end developer living and working in Toronto, Canada.</h1>
+                <p>In just over three years I have discovered that I have a passion for creating efficient and organized code. I cringe when I see repeated code, I love pushing for more critical PR's, and I want to keep learning more through challenging work. As a developer at Info-Tech Research Group I work with the design and development team always improving the look and build of digital products.</p>
+              </section>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- TESTER -->
-      <div class="section--tight">
-        <div class="container">
-          
+        <!-- Experience Section -->
+        <div id="portfolio">
+          <section class="section__portfolio container">
+            <div class="section-header">
+              <h2>Portfolio</h2>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 col-md-4">
+                <div class="work work-item1">
+                  <a href="http://amytangcodes.com/pacific/" target="_blank" class="img-overlay">
+        						<h3>Pacific Tavern</h3>
+        						<p>Tasked to create interactive and responsive hero and navigation sections from designed templates</p>
+        					</a>
+                </div>
+      				</div>
+      				<div class="col-sm-6 col-md-4">
+                <div class="work work-item2">
+                  <a href="http://amytangcodes.com/elixir/" target="_blank" class="img-overlay">
+        						<h3>Elixir</h3>
+        						<p>Tasked to create interactive and responsive hero and navigation sections from designed templates</p>
+        					</a>
+                </div>
+      				</div>
+      				<div class="col-sm-6 col-md-4">
+                <div class="work work-item3">
+                  <a href="http://amytangcodes.com/jqueryGallery/" target="_blank" class="img-overlay">
+        						<h3>Short Hair, Don't Care</h3>
+        						<p>Paired programming with Emily Dela Cruz where we created an interactive jQuery gallery</p>
+        					</a>
+                </div>
+      				</div>
+      				<div class="col-sm-6 col-md-4">
+                <div class="work work-item4">
+                  <a href="http://www.amytangcodes.com/rockPaperScissors/" target="_blank" class="img-overlay">
+        						<h3>Rock | Paper | Scissors</h3>
+        						<p>Play a game of rock, paper, scissors</p>
+        					</a>
+                </div>
+      				</div>
+      				<div class="col-sm-6 col-md-4">
+                <div class="work work-item5">
+                  <a href="http://www.amytangcodes.com/penguins/" target="_blank" class="img-overlay">
+        						<h3>Penguins!</h3>
+        						<p>Cute, simple but fun projest with Coder Projects</p>
+        					</a>
+                </div>
+      				</div>
+      				<div class="col-sm-6 col-md-4">
+                <div class="work work-item6">
+                  <a href="http://amytangcodes.com/modal_gallery/" target="_blank" class="img-overlay">
+        						<h3>Modal Gallery</h3>
+        						<p>Creating a responsive modal gallery with some animations</p>
+        					</a>
+                </div>
+      				</div>
+      				<div class="col-sm-6 col-md-4">
+                <div class="work work-item7">
+                  <a href="http://amytangcodes.com/apiProject/" target="_blank" class="img-overlay">
+        						<h3>API Project</h3>
+        						<p>API Project calling on Yummly's and FourSquare's API</p>
+        					</a>
+                </div>
+      				</div>
+            </div>
+          </section>
         </div>
-      </div>
-      <!-- END TESTER -->
 
-      <!-- Experience Section -->
-      <div id="portfolio" class="section--tight">
-        <section class="section__portfolio container">
-          <div class="section-header">
-            <h2>Portfolio</h2>
-          </div>
+        <!-- Contact Section -->
+        <div id="contact" class="contact-block">
 
-          <div class="row">
-
-            <div class="col-sm-6 col-md-4 hp-work-single aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-quad">
-              <a href="case/designpractice.html">
-                <img src="img/casestudy-designpractice.jpg" alt="Shopify designers at a Retrospective">
-                <div class="hp-work-single__body">
-                  <h5 class="no-margin">Growing a Design Practice and Team</h5>
-                  <p class="no-margin">How we grew our team at Shopify Toronto</p>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-sm-6 col-md-4">
-              <a href="http://amytangcodes.com/pacific/" class="card">
-                <div class="card-body">
-                  <h3>Pacific Tavern</h3>
-                  <p>Tasked to create interactive and responsive hero and navigation sections from designed templates</p>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-sm-6 col-md-4">
-              <a href="http://amytangcodes.com/elixir/" target="_blank" class="card">
-                <div class="card-body">
-                  <h3>Elixir</h3>
-                  <p>Tasked to create interactive and responsive hero and navigation sections from designed templates</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-sm-6 col-md-4">
-              <a href="http://amytangcodes.com/jqueryGallery/" target="_blank" class="card">
-                <div class="card-body">
-                  <h3>Short Hair, Don't Care</h3>
-                  <p>Paired programming with Emily Dela Cruz where we created an interactive jQuery gallery</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-sm-6 col-md-4">
-              <a href="http://www.amytangcodes.com/rockPaperScissors/" target="_blank" class="card">
-                <div class="card-body">
-                  <h3>Rock | Paper | Scissors</h3>
-                  <p>Play a game of rock, paper, scissors</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-sm-6 col-md-4">
-              <a href="http://www.amytangcodes.com/penguins/" target="_blank" class="card">
-                <div class="card-body">
-                  <h3>Penguins!</h3>
-                  <p>Cute, simple but fun projest with Coder Projects</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-sm-6 col-md-4">
-              <a href="http://amytangcodes.com/modal_gallery/" target="_blank" class="card">
-                <div class="card-body">
-                  <h3>Modal Gallery</h3>
-                  <p>Creating a responsive modal gallery with some animations</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-sm-6 col-md-4">
-              <a href="http://amytangcodes.com/apiProject/" target="_blank" class="card">
-                <div class="card-body">
-                  <h3>API Project</h3>
-                  <p>API Project calling on Yummly's and FourSquare's API</p>
-                </div>
-              </a>
-            </div>
-          </div>
-        </section>
-      </div>
-
-      <!-- Contact Section -->
-      <div id="contact" class="contact-block">
-
+        </div>
       </div>
     </main>
 
@@ -187,19 +170,6 @@
     <script src="assets/components/modernizr/modernizr.js"></script>
     <script src="assets/js/scripts.js"></script>
 
-    <!-- <script>
-      $(document).ready(function() {
-        $('.skillbar').each(function() {
-          $(this)
-            .find('.skillbar__bar')
-            .animate({
-                width: $(this).attr('data-percent')
-              },
-              6000
-            );
-        });
-      });
-    </script> -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <!-- <script>

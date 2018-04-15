@@ -1,0 +1,54 @@
+//----------------------------------
+// PORTFOLIO
+//----------------------------------
+.section__portfolio {
+  grid-column: 1 / span 4;
+	color: black;
+	
+	.card {
+		min-height: 238px;
+		margin-bottom: 10px;
+
+		p {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.work {
+	position: relative;
+	transition: all 0.6s linear;
+  border: 1px dashed green;
+
+  img {
+		position: relative;
+	}
+
+  .overlay {
+		position: absolute;
+		top: 0px;
+		bottom: 0px;
+		right: 0px;
+		left: 0px;
+		padding-top: 20px;
+		opacity: 0;
+
+    &:hover {
+			opacity: 1;
+		}
+
+    h3, p {
+      color: blue;
+			font-family: $primary;
+			padding-left: 20px;
+		}
+
+		h3 {
+			font-weight: 900;
+		}
+
+		p {
+			font-size: 12px;
+		}
+	}
+}

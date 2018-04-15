@@ -16,11 +16,14 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+h1, h2 {
+  font-family: $primary;
+}
+
 h1 {
-  font-size: 2.5em !important;
+  font-size: 2.5em;
   font-weight: 200;
   margin: 0 auto;
-  padding-bottom: 4px;
 }
 
 a, i {
@@ -32,11 +35,11 @@ a, i {
 }
 
 p {
-  font-family: $secondary;
-  font-size: 1.12rem;
-  font-weight: 400;
+  font-family: $playfair;
+  font-size: 1.125em;
+  font-weight: 300;
+  color: $base;
   line-height: 1.5;
-  // word-spacing: 5px;
 }
 
 ol, ul {
@@ -44,14 +47,3 @@ ol, ul {
   padding: 0;
   margin: 0;
 }
-
-header, main {
-  // min-height: 100vh;
-}
-
-
-// REMOVE WHEN DONE *trash
-
-// header { background: yellow; }
-.section-portfolio { background: pink; }
-// footer { background: violet; }

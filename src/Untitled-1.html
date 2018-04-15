@@ -1,0 +1,153 @@
+<style>
+  @keyframes fadeup {
+    from { opacity: 0; transform:translateY(80px);  }
+    to   { opacity: 1; transform:translateY(0); }
+  }
+
+  /* Safari, Chrome and Opera > 12.1 */
+  @-webkit-keyframes fadeup {
+    from { opacity: 0; transform:translateY(80px);  }
+    to   { opacity: 1; transform:translateY(0); }
+  }
+
+  @keyframes fadeon {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  /* Firefox < 16 */
+  @-moz-keyframes fadeon {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  /* Safari, Chrome and Opera > 12.1 */
+  @-webkit-keyframes fadeon {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  /* Internet Explorer */
+  @-ms-keyframes fadeon {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  /* Opera < 12.1 */
+  @-o-keyframes fadeon {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  @keyframes faderight {
+    from { opacity: 0; transform: translateX(-80px);}
+    to   { opacity: 1; transform: translateX(0px);}
+  }
+
+  /* Safari, Chrome and Opera > 12.1 */
+  @-webkit-keyframes faderight {
+    from { opacity: 0; transform: translateX(-80px);}
+    to   { opacity: 1; transform: translateX(0px);}
+  }
+
+  // -------------------------------
+  // Animations
+  // -------------------------------
+  .fade-in {
+    &.fade-up {
+      &.visible  {
+        animation: 2s ease fadeup;
+        -webkit-animation: 2s ease fadeup;
+        animation-delay: 0s;
+        -webkit-animation-delay: 0s;
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+        opacity: 1;
+      }
+    }
+    
+    &.fade-on {
+      &.visible  {
+        animation: 1s ease fadeon;
+        -webkit-animation: 1s ease fadeon;
+        animation-delay: 0s;
+        -webkit-animation-delay: 0s;
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+        opacity: 1;
+      }
+    }
+    
+    &.fade-right {
+      &.visible  {
+        animation: 1s ease faderight;
+        -webkit-animation: 1s ease faderight;
+        animation-delay: 0s;
+        -webkit-animation-delay: 0s;
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+      }
+    } 
+  }
+
+
+</style> 
+
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="work work-item1">
+      <a href="http://amytangcodes.com/pacific/" target="_blank" class="img-overlay">
+        <h3>Pacific Tavern</h3>
+        <p>Tasked to create interactive and responsive hero and navigation sections from designed templates</p>
+      </a>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <div class="work work-item2">
+      <a href="http://amytangcodes.com/elixir/" target="_blank" class="img-overlay">
+        <h3>Elixir</h3>
+        <p>Tasked to create interactive and responsive hero and navigation sections from designed templates</p>
+      </a>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <div class="work work-item3">
+      <a href="http://amytangcodes.com/jqueryGallery/" target="_blank" class="img-overlay">
+        <h3>Short Hair, Don't Care</h3>
+        <p>Paired programming with Emily Dela Cruz where we created an interactive jQuery gallery</p>
+      </a>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <div class="work work-item4">
+      <a href="http://www.amytangcodes.com/rockPaperScissors/" target="_blank" class="img-overlay">
+        <h3>Rock | Paper | Scissors</h3>
+        <p>Play a game of rock, paper, scissors</p>
+      </a>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <div class="work work-item5">
+      <a href="http://www.amytangcodes.com/penguins/" target="_blank" class="img-overlay">
+        <h3>Penguins!</h3>
+        <p>Cute, simple but fun projest with Coder Projects</p>
+      </a>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <div class="work work-item6">
+      <a href="http://amytangcodes.com/modal_gallery/" target="_blank" class="img-overlay">
+        <h3>Modal Gallery</h3>
+        <p>Creating a responsive modal gallery with some animations</p>
+      </a>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <div class="work work-item7">
+      <a href="http://amytangcodes.com/apiProject/" target="_blank" class="img-overlay">
+        <h3>API Project</h3>
+        <p>API Project calling on Yummly's and FourSquare's API</p>
+      </a>
+    </div>
+  </div>
+</div>
