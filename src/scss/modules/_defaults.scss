@@ -5,19 +5,19 @@
 }
 
 body {
-  font-family: $secondary;
+  font-family: $primary;
   color: black;
   transition: all .4s .3s ease-in;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $playfair;
+  font-family: $secondary;
   line-height: 1.125em;
   margin: 0;
 }
 
 h1, h2 {
-  font-family: $primary;
+  font-family: $header;
 }
 
 h1 {
@@ -35,8 +35,8 @@ a, i {
 }
 
 p {
-  font-family: $playfair;
-  font-size: 1.125em;
+  font-family: $secondary;
+  font-size: 1em;
   font-weight: 300;
   color: $base;
   line-height: 1.5;
