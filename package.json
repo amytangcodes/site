@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.6",
+    "masonry-layout": "^4.2.1",
     "node-sass": "^4.7.2"
   }
 }

@@ -44,9 +44,10 @@
   transition: all 0.8s ease;
   
   .img-container {
-    width: 300px;
+    width: 80%;
     position: relative;
-    box-shadow: 0px 0px 20px rgba(black, 0.5);
+    box-shadow: -8px 10px 15px 0px rgba(black, 0.4);
+    
 
     &:hover {
       .footnote {
@@ -57,7 +58,7 @@
     }
 
     img {
-      max-width: 100%;
+      width: 100%;
       height: auto;
       opacity: 0.5;
     }

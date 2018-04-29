@@ -6403,12 +6403,12 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   text-rendering: optimizeLegibility; }
 
 body {
-  font-family: #919292;
+  font-family: "Nunito Sans", sans-serif;
   color: black;
   transition: all .4s .3s ease-in; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display", serif;
+  font-family: #919292;
   line-height: 1.125em;
   margin: 0; }
 
@@ -6426,8 +6426,8 @@ a, i {
     text-decoration: none; }
 
 p {
-  font-family: "Playfair Display", serif;
-  font-size: 1.125em;
+  font-family: #919292;
+  font-size: 1em;
   font-weight: 300;
   color: #333333;
   line-height: 1.5; }
@@ -6919,15 +6919,15 @@ th {
   padding-left: 5px;
   transition: all 0.8s ease; }
   .profile__image .img-container {
-    width: 300px;
+    width: 80%;
     position: relative;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); }
+    box-shadow: -8px 10px 15px 0px rgba(0, 0, 0, 0.4); }
     .profile__image .img-container:hover .footnote {
       bottom: -38px;
       visibility: visible;
       opacity: 1; }
     .profile__image .img-container img {
-      max-width: 100%;
+      width: 100%;
       height: auto;
       opacity: 0.5; }
     @media (min-width: 992px) {
@@ -6943,7 +6943,7 @@ th {
     bottom: 0;
     opacity: 0; }
     .profile__image .footnote .footnote-content {
-      font-family: #919292;
+      font-family: "Nunito Sans", sans-serif;
       color: #72929f;
       font-size: 12px;
       font-weight: 700;
@@ -6971,11 +6971,28 @@ th {
   -ms-grid-column: 1;
       grid-column: 1 / span 4;
   color: black; }
-  .section__portfolio .card {
-    min-height: 238px;
-    margin-bottom: 10px; }
-    .section__portfolio .card p {
-      margin-bottom: 0; }
+  .section__portfolio .card-item {
+    padding: 5px; }
+  .section__portfolio .card-item__wrapper {
+    display: block;
+    border-radius: 3px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: all .5s ease-in-out; }
+    .section__portfolio .card-item__wrapper:hover .card-item__image-inner {
+      background-size: 110%; }
+  .section__portfolio .card-item__image-inner {
+    padding-bottom: 120px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    transition: all .5s ease-in-out; }
+  .section__portfolio .card-item__copy {
+    padding: 10px;
+    min-height: 150px; }
+    .section__portfolio .card-item__copy h3 {
+      font-weight: 700;
+      color: #333333; }
 
 .work {
   position: relative;
